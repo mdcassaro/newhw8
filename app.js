@@ -149,7 +149,8 @@ function addIntern(){
         }
 
     ]).then(function(userinput){
-        const intern = new Intern(userinput.internName, userinput.internId, userinput.internEmail, userinput.internSchool)
+        console.log(userinput);
+        const intern = new Intern(userinput.internName, userinput.internId, userinput.internEmail,userinput.internSchool)
         console.log("Intern",intern)
           internlist.push(intern);
         displaymenu()
